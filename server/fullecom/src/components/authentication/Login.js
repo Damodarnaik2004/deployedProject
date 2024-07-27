@@ -12,7 +12,7 @@ const handleLogin=async()=>{
            setError(true)
            return false;
     }
-    let result = await fetch('http://localhost:8000/login',{
+    let result = await fetch('/login',{
         method:'post',
         body:JSON.stringify({email,password}),  
         headers:{
